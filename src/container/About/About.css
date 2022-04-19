@@ -4,6 +4,7 @@
     justify-content: space-between;
     background-color: #fff;
     padding: 4rem 6rem;
+    z-index: 120;
 }
 .about__content{
     display: flex;

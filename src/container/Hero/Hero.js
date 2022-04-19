@@ -9,7 +9,10 @@ const Hero = () => {
     const [isOpen, setIsOpen] = useState(false)
   return (
     <div className='bg-one'>
-        <div className='menu-btn' onClick={() => setIsOpen(!isOpen)}><BiMenuAltRight/></div>
+        <div className='menu-btn' onClick={() => {
+            setIsOpen(!isOpen)
+            console.log("first")
+        }}><BiMenuAltRight/></div>
         <img src={air} alt="" className='air'/>
         <img src={rocket} alt="" className='rocket'/>
         <img src={planet} alt="" className='planet'/>
@@ -18,7 +21,15 @@ const Hero = () => {
        <div className='bg-four'></div>
        <div className='nav'>
             <div><img src={logo} alt="" /></div>
-            <div className={`nav-links ${isOpen ? 'isOpen' : 'isClosed'}`}>
+            <div className={`nav-links`}>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Features</a>
+                <a href="#">How it works</a>
+                <a href="#">FAQ</a>
+                <a href="#">Contact</a>
+            </div>
+            <div className={`nav-links2 ${isOpen ? 'isOpen' : 'isClosed'}`}>
                 <a href="#">Home</a>
                 <a href="#">About</a>
                 <a href="#">Features</a>
