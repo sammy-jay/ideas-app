@@ -1,0 +1,82 @@
+.contact{
+    width: 100vw;
+    height: 80vh;
+    background-image: url('../../assets/Rectangle 81.png') ;
+    background-color: rgba(27, 36, 50, 0.8);
+    background-blend-mode: multiply;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    text-align: center;
+}
+.contact p{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.8);
+}
+.contact h2{
+    font-family: 'Gilroy-Bold';
+    font-size: 48px;
+    line-height: 52px;
+    text-align: center;
+    letter-spacing: -0.4px;
+    color: #FFFFFF;
+    margin-bottom: 3rem;
+}
+textarea, input{
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    padding: 0.5rem;
+    color: rgba(255, 255, 255, 0.8);
+    outline: none;
+}
+textarea{
+    resize: none;
+    width: 500px;
+}
+
+.contact-two{
+    width: 500px;
+    display: flex;
+}
+input{
+    flex: 1;
+}
+
+.contact button{
+    padding: 0.5rem 2rem;
+    margin-left: 1rem;
+    text-align: center;
+    background-color: #E2323C;
+     color: rgba(255, 255, 255, 0.8);
+     border: none;
+     cursor: pointer;
+}
+.contact  *{
+    margin-bottom: 1rem;
+}
+@media screen and (max-width: 820px) {
+    .contact{
+    width: 100vw;
+    height: 50vh;
+    }
+    textarea{
+   
+    width: 70vw;
+}
+
+.contact-two{
+    width: 70vw;
+    display: flex;
+}
+}
