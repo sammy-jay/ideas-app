@@ -31,7 +31,13 @@
    flex-direction: column;
     justify-content: space-between;
     align-items: center;
-}
+    }
+    .footer-one{
+        flex-direction: column;
+    }
+    .footer-one *{
+        margin-bottom: 15px;
+    }
     .footer-two *{
         margin-bottom: 10px;
     }

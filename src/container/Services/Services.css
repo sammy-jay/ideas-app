@@ -40,5 +40,21 @@
     }
     .services img{
         width: 80vw;
+        height: max-content;
+    }
+    .services-one{
+    margin: 3rem 1rem;
+    }
+    .services-one h2{
+      
+        font-size: 35px;
+        line-height: 45px;
+        color: #121420;
+    }
+    .services-one p{
+       
+        font-size: 16px;
+        line-height: 35px;
+       
     }
 }

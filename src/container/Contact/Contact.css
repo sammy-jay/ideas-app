@@ -42,11 +42,12 @@ textarea, input{
 }
 textarea{
     resize: none;
-    width: 500px;
+    width: 60vw;
+    min-height: 100px;
 }
 
 .contact-two{
-    width: 500px;
+    width: 60vw;
     display: flex;
 }
 input{
@@ -73,10 +74,27 @@ input{
     textarea{
    
     width: 70vw;
+    }
+
+    .contact-two{
+        width: 70vw;
+        display: flex;
+    }
+    .contact p{
+    font-size: 14px;
+    line-height: 26px;
+}
+.contact h2{
+    font-size: 35px;
+    line-height: 45px;
+}
 }
 
-.contact-two{
-    width: 70vw;
-    display: flex;
+@media screen and (max-width: 720px) {
+    .contact-two{
+    flex-direction: column;
+}
+.contact button{
+    margin-left: 0rem;
 }
 }
