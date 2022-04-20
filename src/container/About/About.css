@@ -20,7 +20,7 @@
   font-weight: 700;
   line-height: 52px;
   color: #121420;
-  margin: 24px 0px;
+  margin: 24px 10px;
 }
 .img-cont {
   height: 480px;
@@ -32,13 +32,15 @@
   font-size: 18px;
   line-height: 40px;
   color: rgba(27, 36, 50, 0.8);
-  margin: 24px 0px;
+  margin: 24px 10px;
 }
 .howItWorks {
   margin-top: 0;
-  object-fit: cover;
-  width: 100vw;
+  /* object-fit: contain; */
+  width: 70%;
   z-index: 120;
+  margin: 2px auto;
+  border: 2px solid red;
 }
 @media screen and (max-width: 820px) {
   .about {
@@ -47,5 +49,10 @@
   }
   .img-cont {
     width: 80vw;
+    height: max-content;
+  }
+  .howItWorks {
+    width: 100vw;
+    object-fit: cover;
   }
 }
