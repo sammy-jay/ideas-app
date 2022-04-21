@@ -8,7 +8,7 @@
   position: relative;
 }
 .section {
-  padding-top: 3rem;
+  padding-top: 1rem;
   z-index: 1000;
   background-color: #fff;
 }
@@ -57,5 +57,10 @@
   .howItWorks {
     width: 100vw;
     object-fit: cover;
+  }
+  .about__content h2,
+  .about__content p {
+    margin-top: 7px;
+    margin-bottom: 7px;
   }
 }
