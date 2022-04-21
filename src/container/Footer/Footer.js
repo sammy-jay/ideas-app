@@ -11,7 +11,7 @@ const Footer = () => {
           <img src={logo} alt="" />
         </div>
         <motion.div
-          whileInView={{ x: [200, 0], opacity: [0, 1] }}
+          whileInView={{ x: [50, 0], opacity: [0, 1] }}
           transition={{ duration: 1, delayChildren: 0.5 }}
         >
           <div>
@@ -23,7 +23,7 @@ const Footer = () => {
       <div className="hrule" />
       <div className="footer-two">
         <motion.div
-          whileInView={{ x: [-200, 0], opacity: [0, 1] }}
+          whileInView={{ x: [-50, 0], opacity: [0, 1] }}
           transition={{ duration: 1, delayChildren: 0.5 }}
         >
           <div className="footer-two-first">
@@ -37,7 +37,7 @@ const Footer = () => {
         </motion.div>
 
         <motion.div
-          whileInView={{ x: [200, 0], opacity: [0, 1] }}
+          whileInView={{ x: [50, 0], opacity: [0, 1] }}
           transition={{ duration: 1, delayChildren: 0.5 }}
         >
           <div>

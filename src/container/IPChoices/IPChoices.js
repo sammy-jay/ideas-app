@@ -10,7 +10,7 @@ import Ipchoices from "../../components/Ipchoices";
 
 const IPChoices = () => {
   return (
-    <div className="ipchoices">
+    <div className="ipchoices" id="features">
       <div className="ipchoices-part-one">
         <h2>IP Choices</h2>
         <p>

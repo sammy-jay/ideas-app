@@ -7,7 +7,7 @@ const Services = () => {
   return (
     <div className="services">
       <motion.div
-        whileInView={{ x: [-100, 0], opacity: [0, 1] }}
+        whileInView={{ x: [-10, 0], opacity: [0, 1] }}
         transition={{ duration: 1 }}
       >
         <div className="services-one">
@@ -21,7 +21,7 @@ const Services = () => {
       </motion.div>
 
       <motion.div
-        whileInView={{ x: [100, 0], opacity: [0, 1] }}
+        whileInView={{ x: [10, 0], opacity: [0, 1] }}
         transition={{ duration: 1 }}
       >
         `{" "}

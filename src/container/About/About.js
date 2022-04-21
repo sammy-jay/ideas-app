@@ -6,10 +6,10 @@ import howItWorks from "../../assets/how it works.png";
 
 const About = () => {
   return (
-    <section>
+    <section className="section" id="about">
       <div className="about">
         <motion.div
-          whileInView={{ x: [-100, 0], opacity: [0, 1] }}
+          whileInView={{ x: [-10, 0], opacity: [0, 1] }}
           transition={{ duration: 1 }}
         >
           <div>
@@ -17,7 +17,7 @@ const About = () => {
           </div>
         </motion.div>
         <motion.div
-          whileInView={{ x: [100, 0], opacity: [0, 1] }}
+          whileInView={{ x: [10, 0], opacity: [0, 1] }}
           transition={{ duration: 1 }}
         >
           <div className="about__content">
@@ -37,6 +37,7 @@ const About = () => {
       <motion.div
         whileInView={{ scale: [0.85, 1] }}
         transition={{ duration: 1 }}
+        id="hiw"
       >
         <img src={howItWorks} alt="" className="howItWorks" />
       </motion.div>
