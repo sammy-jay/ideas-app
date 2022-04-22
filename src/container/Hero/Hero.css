@@ -47,8 +47,8 @@
   position: relative;
   z-index: -60;
   display: flex;
-  width: 50vw;
-  padding-top: 4rem;
+  width: 60vw;
+  padding-top: 6rem;
   margin: 5.5rem auto 0;
   color: #fff;
   flex-direction: column;
@@ -60,9 +60,11 @@
   font-weight: 700;
   text-align: center;
   margin-bottom: 1rem;
+  font-family: "Montserrat", sans-serif;
 }
 .hero-content p {
   font-size: 20px;
+  font-family: "DM Sans", sans-serif;
   text-align: center;
   margin: 1rem auto;
   font-weight: 400;
@@ -81,15 +83,15 @@
   position: absolute;
   height: 120px;
   width: 120px;
-  left: 80%;
-  top: 25%;
+  left: 85%;
+  top: 15%;
   border-radius: 0px;
 }
 .planet {
   height: 104px;
   width: 104px;
-  left: 75%;
-  top: 90%;
+  left: 70%;
+  top: 70%;
   border-radius: 0px;
   position: absolute;
 }
@@ -98,7 +100,7 @@
   height: 128px;
   width: 128px;
   left: 10%;
-  top: 50%;
+  top: 60%;
   border-radius: 0px;
 }
 

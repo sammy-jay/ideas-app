@@ -15,6 +15,7 @@
   text-align: center;
 }
 .contact p {
+  font-family: "DM Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -25,7 +26,7 @@
   color: rgba(255, 255, 255, 0.8);
 }
 .contact h2 {
-  font-family: "Gilroy-Bold";
+  font-family: "Montserrat", sans-serif;
   font-size: 48px;
   line-height: 52px;
   text-align: center;
@@ -36,19 +37,19 @@
 textarea,
 input {
   background: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.8);
+  border: 2px solid #ebeaed;
   padding: 0.5rem;
   color: rgba(255, 255, 255, 0.8);
   outline: none;
 }
 textarea {
   resize: none;
-  width: 60vw;
+  width: 500px;
   min-height: 100px;
 }
 
 .contact-two {
-  width: 60vw;
+  width: 500px;
   display: flex;
 }
 input {

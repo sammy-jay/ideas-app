@@ -20,6 +20,7 @@
   z-index: 1000;
 }
 .nav a {
+  font-family: "Montserrat", sans-serif;
   font-size: 20px;
   line-height: 24px;
   color: #fff;

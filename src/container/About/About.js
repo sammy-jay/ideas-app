@@ -2,7 +2,7 @@ import React from "react";
 import "./About.css";
 import { motion } from "framer-motion";
 import aboutImg from "../../assets/Rectangle 83.png";
-import howItWorks from "../../assets/how it works.png";
+import howItWorks from "../../assets/hiw.png";
 
 const About = () => {
   return (
@@ -39,7 +39,17 @@ const About = () => {
         transition={{ duration: 1 }}
         id="hiw"
       >
-        <img src={howItWorks} alt="" className="howItWorks" />
+        <div className="howItWorks">
+          <div className="howItWorksOne">
+            <h2>How it Works</h2>
+            <p>
+              We have created a new product that will help designers, developers
+              and companies create websites for their startups quickly and
+              easily.
+            </p>
+          </div>
+          <img src={howItWorks} alt="" />
+        </div>
       </motion.div>
     </section>
   );

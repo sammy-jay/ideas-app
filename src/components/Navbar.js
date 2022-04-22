@@ -1,23 +1,50 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Navbar.css";
 import logo from "../assets/logo.png";
 import { BiMenuAltRight } from "react-icons/bi";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [changeBg, setChangeBg] = useState(false);
   window.addEventListener("scroll", () => setIsOpen(false));
+  const handleBg = () => {
+    if (window.scrollY >= 50) {
+      setChangeBg(true);
+    } else {
+      setChangeBg(false);
+    }
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", handleBg);
+
+    return () => {
+      window.removeEventListener("scroll", handleBg);
+    };
+  });
 
   return (
-    <div className="nav">
+    <div className="nav" style={{ backgroundColor: changeBg && "white" }}>
       <div>
         <img src={logo} alt="" />
       </div>
       <div className={`nav-links`}>
-        <a href="#">Home</a>
-        <a href="#about">About</a>
-        <a href="#features">Features</a>
-        <a href="#hiw">How it works</a>
-        <a href="#">FAQ</a>
-        <a href="#contact">Contact</a>
+        <a style={{ color: changeBg && "#222" }} href="#">
+          Home
+        </a>
+        <a style={{ color: changeBg && "#222" }} href="#about">
+          About
+        </a>
+        <a style={{ color: changeBg && "#222" }} href="#features">
+          Features
+        </a>
+        <a style={{ color: changeBg && "#222" }} href="#hiw">
+          How it works
+        </a>
+        <a style={{ color: changeBg && "#222" }} href="#">
+          FAQ
+        </a>
+        <a style={{ color: changeBg && "#222" }} href="#contact">
+          Contact
+        </a>
       </div>
       <div
         className="menu-btn"
@@ -29,12 +56,24 @@ const Navbar = () => {
       </div>
 
       <div className={`nav-links2 ${isOpen ? "isOpen" : "isClosed"}`}>
-        <a href="#">Home</a>
-        <a href="#about">About</a>
-        <a href="#features">Features</a>
-        <a href="#hiw">How it works</a>
-        <a href="#">FAQ</a>
-        <a href="#contact">Contact</a>
+        <a style={{ color: changeBg && "#222" }} href="#">
+          Home
+        </a>
+        <a style={{ color: changeBg && "#222" }} href="#about">
+          About
+        </a>
+        <a style={{ color: changeBg && "#222" }} href="#features">
+          Features
+        </a>
+        <a style={{ color: changeBg && "#222" }} href="#hiw">
+          How it works
+        </a>
+        <a style={{ color: changeBg && "#222" }} href="#">
+          FAQ
+        </a>
+        <a style={{ color: changeBg && "#222" }} href="#contact">
+          Contact
+        </a>
       </div>
     </div>
   );
