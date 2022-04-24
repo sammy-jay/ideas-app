@@ -1,10 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import "./About.css";
+import { ToggleButton, ToggleButtonGroup } from "@mui/material";
 import { motion } from "framer-motion";
 import aboutImg from "../../assets/Rectangle 83.png";
 import howItWorks from "../../assets/hiw.png";
+import { BsToggleOn } from "react-icons/bs";
+
+import HIW from "../../components/HIW";
+import { fontWeight } from "@mui/system";
 
 const About = () => {
+  const [value, setValue] = useState("Buyers");
+  const handleChange = (e, newValue) => setValue(newValue);
+
   return (
     <section className="section" id="about">
       <div className="about">
@@ -47,8 +55,75 @@ const About = () => {
               and companies create websites for their startups quickly and
               easily.
             </p>
+            <ToggleButtonGroup
+              value={value}
+              onChange={handleChange}
+              exclusive
+              color="primary"
+              style={{
+                margin: "10px 0px 20px",
+                padding: "5px",
+                backgroundColor: "rgba(27, 36, 50, 0.1)",
+                borderRadius: "5px",
+                width: "max-content",
+                color: "#000",
+                fontWeight: "600",
+                textTransform: "capitalise",
+              }}
+            >
+              <ToggleButton
+                value="Buyers"
+                style={{
+                  backgroundColor: value === "Buyers" ? "#fff" : "transparent",
+                  borderRadius: "5px",
+                  border: "none",
+                  color: "#000",
+                  padding: "7px 20px",
+
+                  marginRight: "5px",
+                }}
+              >
+                Buyers
+              </ToggleButton>
+              <ToggleButton
+                value="Sellers"
+                style={{
+                  backgroundColor: value === "Sellers" ? "#fff" : "transparent",
+                  border: "none",
+                  color: "#000",
+                  borderRadius: "5px",
+                  padding: "7px 20px",
+                }}
+              >
+                Sellers
+              </ToggleButton>
+            </ToggleButtonGroup>
+            <div className="outerDiv">
+              <HIW
+                Icon={BsToggleOn}
+                text="Create an account"
+                desc="Start by downloading the app and sign up"
+              />
+              <HIW
+                Icon={BsToggleOn}
+                text="Create an account"
+                desc="Start by downloading the app and sign up"
+              />
+              <HIW
+                Icon={BsToggleOn}
+                text="Create an account"
+                desc="Start by downloading the app and sign up"
+              />
+              <HIW
+                Icon={BsToggleOn}
+                text="Create an account"
+                desc="Start by downloading the app and sign up"
+              />
+            </div>
           </div>
-          <img src={howItWorks} alt="" />
+          <div className="howItWorksTwo">
+            <img src={howItWorks} alt="" />
+          </div>
         </div>
       </motion.div>
     </section>
