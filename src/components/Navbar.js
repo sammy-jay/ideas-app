@@ -39,7 +39,7 @@ const Navbar = () => {
         <a style={{ color: changeBg && "#222" }} href="#hiw">
           How it works
         </a>
-        <a style={{ color: changeBg && "#222" }} href="#">
+        <a style={{ color: changeBg && "#222" }} href="#faq">
           FAQ
         </a>
         <a style={{ color: changeBg && "#222" }} href="#contact">
@@ -52,7 +52,7 @@ const Navbar = () => {
           setIsOpen(!isOpen);
         }}
       >
-        <BiMenuAltRight />
+        <BiMenuAltRight style={{ color: changeBg && "#222" }} />
       </div>
 
       <div className={`nav-links2 ${isOpen ? "isOpen" : "isClosed"}`}>
@@ -68,7 +68,7 @@ const Navbar = () => {
         <a style={{ color: changeBg && "#222" }} href="#hiw">
           How it works
         </a>
-        <a style={{ color: changeBg && "#222" }} href="#">
+        <a style={{ color: changeBg && "#222" }} href="#faq">
           FAQ
         </a>
         <a style={{ color: changeBg && "#222" }} href="#contact">

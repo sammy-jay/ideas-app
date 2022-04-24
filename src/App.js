@@ -7,6 +7,7 @@ import Footer from "./container/Footer/Footer";
 import Hero from "./container/Hero/Hero";
 import IPChoices from "./container/IPChoices/IPChoices";
 import Services from "./container/Services/Services";
+import FAQ from "./container/FAQ/FAQ";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <IPChoices />
       <Services />
       <Contact />
+      <FAQ />
       <CTA />
       <Footer />
     </div>

@@ -19,6 +19,7 @@ html::-webkit-scrollbar-thumb {
   border-radius: 10px;
 }
 body {
+  scroll-behavior: smooth;
   overflow-x: hidden;
   margin: 0;
   padding: 0;

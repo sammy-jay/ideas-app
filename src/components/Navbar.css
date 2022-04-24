@@ -45,6 +45,7 @@
   .nav .nav-links2 {
     background-color: #fff;
     color: #222;
+    border: 0.1px solid #ccc;
     /* display: flex;
         display: none; */
     flex-direction: column;
@@ -60,7 +61,7 @@
     width: 100vw;
   }
   .nav a {
-    font-size: 20px;
+    font-size: 16px;
     line-height: 24px;
     color: #222;
     margin: 7px 15px 7px 7px;
